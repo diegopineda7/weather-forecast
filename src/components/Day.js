@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Day({ icon, weekDay, weather, minTemp, maxTemp }) {
   const iconUrl = `http://openweathermap.org/img/w/${icon}.png`
+
   return (
     <div className="day shadow">
       <div className='day__icon'>
@@ -12,7 +13,7 @@ export default function Day({ icon, weekDay, weather, minTemp, maxTemp }) {
         {weather}
       </div>
       <div className='day__temps'>
-        {maxTemp} / {minTemp}
+        <p>{maxTemp}</p><p>ºC</p> <p>/ {minTemp}</p><p>ºC</p>
       </div>
     </div>
   )

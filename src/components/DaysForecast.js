@@ -6,7 +6,7 @@ export default function DaysForecast() {
     <div className="days">
       <div className="header">
         <b>3 Days</b> Forecast
-          </div>
+      </div>
       <div className="content--days">
         <Day />
         <Day />

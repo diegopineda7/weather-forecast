@@ -38,7 +38,12 @@ function App() {
             <Banner cityName={bogotaWeather.name} />
             <div className='app__secondary'>
               <DaysForecast forecast={bogotaForecast} />
-              <PlaceVisit />
+              <PlaceVisit
+                place1='Arab Street'
+                place2='Art Science Museum'
+                place3='Fountain of Wealth'
+                city='Singapour'
+              />
               <CitiesWeather
                 paris={parisWeather}
                 city={cityWeather}

@@ -9,16 +9,18 @@ export default function PlaceVisit({ place1, city, place2, place3 }) {
         <Reviews />
       </div>
       <div className='content--visit'>
-        <div className='visit__city'>
-          <p>{place1}</p>
-          <p>{city}</p>
+        <div className='visit__city shadow'>
+          <p className='visit__name'>
+            <p>{place1}</p>
+            <p>{city}</p>
+          </p>
         </div>
         <div className='visit__secondary'>
           <div className='visit__place'>
-            <p>{place2}</p>
+            <p className='visit__name'>{place2}</p>
           </div>
           <div className='visit__place'>
-            <p>{place3}</p>
+            <p className='visit__name'>{place3}</p>
             <button className='visit__plus'>+</button>
           </div>
         </div>

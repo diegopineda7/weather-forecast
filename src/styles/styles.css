@@ -73,9 +73,15 @@
 /* =============== BANNER =============== */
 
 .app__banner {
-  padding: 35px 85px;
+  padding: 45px 85px;
   border: 1px solid black;
   border-radius: 15px;
+}
+
+.city-name {
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* =============== APP SECONDARY =============== */
@@ -160,16 +166,15 @@
 
 .visit__secondary {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 2fr 3fr;
   gap: 20px;
 }
 
 .visit__place {
-  border: 1px solid black;
-  border-radius: 20px;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  border: 1px solid black;
+  justify-content: space-between;
+  border-radius: 20px;
 }
 
 .visit__plus {
@@ -181,6 +186,13 @@
   color: #fff;
   font-size: 25px;
 }
+
+.visit__name {
+  position: relative;
+  padding: 25px;
+  font-size: 15px;
+}
+
 
 /* =============== CITIES WEATHER SECTION =============== */
 

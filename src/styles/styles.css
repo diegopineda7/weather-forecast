@@ -1,0 +1,19 @@
+body {
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.app__banner {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 15px;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  height: 41%;
+}

@@ -4,6 +4,11 @@ import React from 'react'
 
 export default function LocationIcon() {
   return (
-    <FontAwesomeIcon style={{ marginRight: 5 }} icon={faMapMarkerAlt} />
+    <FontAwesomeIcon
+      icon={faMapMarkerAlt}
+      style={{
+        marginRight: 5
+      }}
+    />
   )
 }

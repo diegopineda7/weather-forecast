@@ -1,9 +1,9 @@
 const appId = process.env.REACT_APP_API_ID
 
-export const getWeatherForecast = (city, next) => {
+export const getWeatherForecast = (lat, lon, next) => {
   var result = ''
   const Http = new XMLHttpRequest()
-  const url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${appId}`
+  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=metric&appid=${appId}`
   Http.open('GET', url)
   Http.send()
 

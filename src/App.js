@@ -14,11 +14,15 @@ function App() {
   const [cityWeather, setCityWeather] = useState(undefined)
 
   useEffect(() => {
-    loadWeather()
-  }, [])
+    if (!bogotaWeather)
+      loadCurrentWeather()
+    else {
+      console.log('HAY:', bogotaWeather)
+      getWeatherForecast(bogotaWeather.coord.lat, bogotaWeather.coord.lon, setBogotaForecast)
+    }
+  }, [bogotaWeather])
 
-  const loadWeather = async () => {
-    getWeatherForecast('bogota', setBogotaForecast)
+  const loadCurrentWeather = () => {
     getCurrentWeather('bogota', setBogotaWeather)
     getCurrentWeather('paris', setParisWeather)
     getCurrentWeather('lyon', setCityWeather)
@@ -37,7 +41,10 @@ function App() {
           <div className='app'>
             <Banner cityName={bogotaWeather.name} />
             <div className='app__secondary'>
-              <DaysForecast forecast={bogotaForecast} />
+              {
+                bogotaForecast &&
+                <DaysForecast forecast={bogotaForecast} />
+              }
               <PlaceVisit
                 place1='Arab Street'
                 place2='Art Science Museum'

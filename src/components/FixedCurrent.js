@@ -1,13 +1,15 @@
 import React from 'react'
+import { iconUrl } from '../services'
 
-export default function FixedCurrent({ icon, temp }) {
+export default function FixedCurrent({ icon, temp, weather }) {
   return (
     <div className="current shadow">
       <div className="current__icon">
-        icon
+        <img src={iconUrl(icon)} alt={weather} />
+        <p>{weather}</p>
       </div>
       <div className="current__temp">
-        temp<p>ºC</p>
+        {temp}<p>ºC</p>
       </div>
     </div>
   )

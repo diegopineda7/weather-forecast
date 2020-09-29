@@ -1,10 +1,11 @@
 import React from 'react'
+import City from './City'
 
 export default function CitiesWeather({ paris, city }) {
   return (
     <div className="cities">
-
-      <div className="city shadow">Madrid</div>
+      <City />
+      <City />
       <div className="city city--location shadow">
         Add location
       </div>

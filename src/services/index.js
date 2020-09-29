@@ -30,6 +30,6 @@ export const getWeatherForecast = city => {
   return result
 }
 
-// export const getIcon = iconName => {
-//   const iconUrl = `http://openweathermap.org/img/w/${icon}.png`
-// }
+export const iconUrl = iconName => {
+  return `http://openweathermap.org/img/w/${iconName}.png`
+}

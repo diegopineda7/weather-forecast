@@ -1,12 +1,11 @@
 import React from 'react'
+import { iconUrl } from '../services'
 
 export default function City({ icon, weather, temp, cityName, country, humidity, windDir, winsSpeed }) {
-  const iconUrl = `http://openweathermap.org/img/w/${icon}.png`
-
   return (
     <div className="city shadow">
       <div className='city__icon'>
-        <img src={iconUrl} alt={weather} />
+        <img src={iconUrl(icon)} alt={weather} />
       </div>
       <div className='city__info'>
         <div className='city__temp'>

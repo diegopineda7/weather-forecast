@@ -1,7 +1,11 @@
-import React from 'react'
-import { iconUrl } from '../services'
+import React from 'react';
+import { iconUrl } from '../services';
 
-export default function City({ icon, weather, temp, cityName, country, humidity, windDir, winsSpeed }) {
+export default function City({ weather, country }) {
+  const { icon } = weather.weather[0];
+  const { temp, humidity } = weather.main;
+  const { speed, deg } = weather.wind;
+  const { name } = weather;
   return (
     <div className="city shadow">
       <div className='city__top'>
@@ -13,15 +17,15 @@ export default function City({ icon, weather, temp, cityName, country, humidity,
             <p>{temp}</p><p className='degrees'>ºC</p>
           </div>
           <div className='city__name'>
-            <p>{cityName}</p>
+            <p>{name}</p>
             <p>{country}</p>
           </div>
         </div>
       </div>
       <div className='city__weather'>
         <p>Humidity: {humidity}%</p>
-        <p>{windDir}</p>
-        <p>{winsSpeed}km/h</p>
+        <p>{deg}</p>
+        <p>{speed}km/h</p>
       </div>
     </div>
   )

@@ -19,13 +19,13 @@ function App() {
   const loadWeather = async () => {
     getCurrentWeather('bogota', setBogotaWeather)
     getCurrentWeather('paris', setParisWeather)
-    getCurrentWeather('madrid', setCityWeather)
+    getCurrentWeather('lyon', setCityWeather)
   }
 
   return (
     <>
       {
-        bogotaWeather &&
+        bogotaWeather && parisWeather && cityWeather &&
         <>
           <FixedCurrent
             icon={bogotaWeather.weather[0].icon}

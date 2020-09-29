@@ -4,8 +4,14 @@ import City from './City'
 export default function CitiesWeather({ paris, city }) {
   return (
     <div className='cities'>
-      <City />
-      <City />
+      <City
+        weather={paris}
+        country='France'
+      />
+      <City
+        weather={city}
+        country='France'
+      />
       <div className='city cities--location shadow'>
         <div className='cities__button'>
           <button className='add-location'>Add Locations</button>

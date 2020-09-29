@@ -3,7 +3,7 @@ import { iconUrl } from '../services'
 
 export default function FixedCurrent({ icon, weather, temp }) {
   return (
-    <div className='current shadow'>
+    <div className='current shadow--bold'>
       <div className='current__icon'>
         <img
           src={iconUrl(icon)}
@@ -13,7 +13,10 @@ export default function FixedCurrent({ icon, weather, temp }) {
         <p>{weather}</p>
       </div>
       <div className='current__temp'>
-        <p className='fixed__temp'><p><b>{temp}</b></p><p className='degrees'>ºC</p></p>
+        <article className='fixed__temp'>
+          <p><b>{temp}</b></p>
+          <p className='degrees'>ºC</p>
+        </article>
       </div>
     </div >
   )

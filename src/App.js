@@ -16,10 +16,8 @@ function App() {
   useEffect(() => {
     if (!bogotaWeather)
       loadCurrentWeather()
-    else {
-      console.log('HAY:', bogotaWeather)
+    else
       getWeatherForecast(bogotaWeather.coord.lat, bogotaWeather.coord.lon, setBogotaForecast)
-    }
   }, [bogotaWeather])
 
   const loadCurrentWeather = () => {

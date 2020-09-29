@@ -16,11 +16,7 @@ export default function CitiesWeather({ paris, city }) {
         <div className='cities__button'>
           <button className='add-location'>Add Locations</button>
         </div>
-        <img
-          src={'s'}
-          alt={'weather'}
-          className='location__img'
-        />
+        <div className='location__img' />
       </div>
     </div>
   )

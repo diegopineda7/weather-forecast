@@ -19,7 +19,7 @@ button {
 
 /* =============== BACKGROUND IMAGES =============== */
 
-.app__banner, .visit__city, .visit__place {
+.app__banner, .visit__city, .visit__place, .location__img {
   background-position: center;
   background-size: cover;
 }
@@ -40,6 +40,10 @@ button {
   background-image: url('https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Cover-for-Places-to-visit-near-Fountain-Of-Wealth.jpg');
 }
 
+.location__img {
+  background-image: url('https://www.blueiot.com.au/wp-content/uploads/2019/05/undraw_best_place_r685-1024x504.png');
+}
+
 /* =============== APP =============== */
 
 .app {
@@ -57,6 +61,12 @@ button {
   -webkit-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
   -moz-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
   box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
+}
+
+.shadow--bold {
+  -webkit-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.45);
+  box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.45);
 }
 
 .degrees {
@@ -135,8 +145,8 @@ button {
 
 .day {
   display: grid;
-  grid-template-columns: 2fr 5fr 3fr;
-  border: 1px solid var(--lighterColor);
+  grid-template-columns: 3fr 4.5fr 3fr;
+  /* border: 1px solid var(--lighterColor); */
   background-color: #fff;
   border-radius: 15px;
 }
@@ -149,11 +159,22 @@ button {
 
 .day__weather {
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.day__week-day {
+  font-weight: bold;
+}
+
+.day__weather-day {
+  font-size: 15px;
+  opacity: .5;
 }
 
 .day__temps {
   border-radius: 10px;
   background-color: var(--lighterColor);
+  font-weight: bold;
 }
 
 .day__temps--next {
@@ -200,7 +221,7 @@ button {
 }
 
 .visit__city {
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .visit__secondary {
@@ -212,14 +233,14 @@ button {
 .visit__place {
   display: flex;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .visit__plus {
   height: 100%;
-  padding: 22px;
+  padding: 18px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: var(--mainColor);
   color: #fff;
   font-size: 25px;
@@ -236,7 +257,7 @@ button {
   font-size: 15px;
   position: relative;
   background-color: rgba(0,0,0,.3);
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 /* =============== CITIES WEATHER SECTION =============== */
@@ -259,7 +280,7 @@ button {
 
 .city__top {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   gap: 15px;
 }
 
@@ -307,7 +328,7 @@ button {
 
 .cities--location {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 45% auto;
   justify-content: center;
   border: 2px dashed var(--lighterColor);
 }
@@ -327,6 +348,6 @@ button {
 }
 
 .location__img {
-  align-self: flex-end;
-  justify-self: center;
+  height: 100%;
+  width: 100%;
 }

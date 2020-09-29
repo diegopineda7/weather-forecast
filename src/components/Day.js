@@ -16,13 +16,13 @@ export default function Day({ dayForecast, next }) {
         <img src={iconUrl(icon)} alt={main} />
       </div>
       <div className='day__weather'>
-        <p>
+        <p className='day__week-day'>
           <Moment
             date={new Date(dt * 1000)}
             format='dddd'
           />
         </p>
-        <p>{main}</p>
+        <p className='day__weather-day'>{main}</p>
       </div>
       <div className={`day__temps ${classWeather}`}>
         <p>{parseInt(max)}</p><p className='degrees'>º</p>

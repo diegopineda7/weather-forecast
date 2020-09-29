@@ -1,4 +1,5 @@
 import React from 'react'
+import Day from './Day'
 
 export default function DaysForecast() {
   return (
@@ -7,9 +8,9 @@ export default function DaysForecast() {
         <b>3 Days</b> Forecast
           </div>
       <div className="content--days">
-        <div className="day shadow">Day1</div>
-        <div className="day shadow">Day2</div>
-        <div className="day shadow">Day3</div>
+        <Day />
+        <Day />
+        <Day />
       </div>
     </div>
   )

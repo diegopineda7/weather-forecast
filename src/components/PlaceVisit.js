@@ -16,10 +16,10 @@ export default function PlaceVisit({ place1, city, place2, place3 }) {
           </p>
         </div>
         <div className='visit__secondary'>
-          <div className='visit__place'>
+          <div className='visit__place visit__place--place2'>
             <p className='visit__name'>{place2}</p>
           </div>
-          <div className='visit__place'>
+          <div className='visit__place visit__place--place3'>
             <p className='visit__name'>{place3}</p>
             <button className='visit__plus'>+</button>
           </div>

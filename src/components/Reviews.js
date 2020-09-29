@@ -18,7 +18,7 @@ export default function Reviews() {
         <div className='reviews__item'>
           <img src={person} alt='Review' className='review__photo' />
         </div>
-        <div className='reviews__item'>
+        <div className='reviews__item reviews__item--count'>
           <p>9+</p>
         </div>
       </div>

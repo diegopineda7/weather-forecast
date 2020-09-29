@@ -13,6 +13,35 @@
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+/* =============== BACKGROUND IMAGES =============== */
+
+.app__banner, .visit__city, .visit__place {
+  background-position: center;
+  background-size: cover;
+}
+
+.app__banner {
+  background-image: url('https://www.webinars4you.com/wp-content/uploads/2019/11/Singapore-Skyline-Banner-e1441102099802.jpg');
+}
+
+.visit__city {
+  background-image: url('https://spendlifetraveling.b-cdn.net/wp-content/uploads/2017/10/singapore_arab_street.jpg');
+}
+
+.visit__place--place2 {
+  background-image: url('https://worldtoptop.com/wp-content/uploads/2011/05/artscience_museum_2.jpg');
+}
+
+.visit__place--place3 {
+  background-image: url('https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Cover-for-Places-to-visit-near-Fountain-Of-Wealth.jpg');
+}
+
+/* =============== APP =============== */
+
 .app {
   position: absolute;
   top: 30px;
@@ -140,7 +169,7 @@
 }
 
 .reviews__photos {
-  gap: 3px
+  gap: 3px;
 }
 
 .reviews__item {
@@ -150,8 +179,11 @@
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  background-color: var(--lightColor);
   color: #fff;
+}
+
+.reviews__item--count {
+  background-color: var(--lightColor);
 }
 
 .review__photo {
@@ -160,7 +192,6 @@
 }
 
 .visit__city {
-  border: 1px solid black;
   border-radius: 20px;
 }
 
@@ -172,7 +203,6 @@
 
 .visit__place {
   display: flex;
-  border: 1px solid black;
   justify-content: space-between;
   border-radius: 20px;
 }
@@ -191,8 +221,8 @@
   position: relative;
   padding: 25px;
   font-size: 15px;
+  color: #fff;
 }
-
 
 /* =============== CITIES WEATHER SECTION =============== */
 

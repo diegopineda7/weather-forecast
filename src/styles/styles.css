@@ -50,3 +50,27 @@ body {
   border: 1px solid black;
   border-radius: 10px;
 }
+
+/* =============== PLACE VISIT SECTION =============== */
+
+.content--visit {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.visit__city {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.visit__secondary {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 20px;
+}
+
+.visit__place {
+  border: 1px solid black;
+  border-radius: 10px;
+}

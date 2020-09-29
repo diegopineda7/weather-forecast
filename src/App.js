@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './components/Banner';
 import DaysForecast from './components/DaysForecast';
+import PlaceVisit from './components/PlaceVisit';
 import './styles/styles.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Banner cityName='Bogotá' />
       <div class="app__secondary">
         <DaysForecast />
+        <PlaceVisit />
       </div>
     </div>
   )

@@ -8,15 +8,17 @@ import './styles/styles.css';
 
 function App() {
   return (
-    <div className="app">
+    <>
       <FixedCurrent />
-      <Banner cityName='Bogotá' />
-      <div class="app__secondary">
-        <DaysForecast />
-        <PlaceVisit />
-        <CitiesWeather />
+      <div className='app'>
+        <Banner cityName='Bogotá' />
+        <div class='app__secondary'>
+          <DaysForecast />
+          <PlaceVisit />
+          <CitiesWeather />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

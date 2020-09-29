@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .app {
   position: absolute;
   top: 30px;
@@ -18,6 +20,12 @@
   line-height: 35px;
 }
 
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 /* =============== FIXED CURRENT =============== */
 
 .current {
@@ -32,12 +40,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5px 15px;
+  width: 75px;
+  height: 75px;
   border: 1px solid black;
+  font-size: 13px;
+  background-color: #fff;
+
 }
 
 .current__temp {
   flex-direction: row;
+  font-size: 25px;
 }
 
 /* =============== BANNER =============== */
@@ -127,6 +140,7 @@
   justify-content: space-between;
   border: 2px solid black;
   border-radius: 10px;
+  background-color: #fff;
 }
 
 .city__top {

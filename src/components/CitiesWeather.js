@@ -5,11 +5,11 @@ export default function CitiesWeather({ paris, city }) {
   return (
     <div className='cities'>
       <City
-        weather={paris}
+        weather={city}
         country='France'
       />
       <City
-        weather={city}
+        weather={paris}
         country='France'
       />
       <div className='city cities--location shadow'>

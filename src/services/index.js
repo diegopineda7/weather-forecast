@@ -1,4 +1,4 @@
-const appId = 'd9808b61d1fc7e7235bb8e197bc5a6ac'
+const appId = process.env.REACT_APP_API_ID
 
 export const getWeatherForecast = (city, next) => {
   var result = ''
@@ -25,7 +25,6 @@ export const getCurrentWeather = (city, next) => {
   Http.onreadystatechange = function () {
     if (this.readyState === 4 && this.status === 200) {
       const result = JSON.parse(Http.responseText)
-      console.log('RES', result)
       next(result)
     }
   }

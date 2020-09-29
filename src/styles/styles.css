@@ -2,7 +2,8 @@
 
 :root {
   --mainColor: #86418f;
-  --lightColor: #dce8f4;
+  --lightColor: #9a60ac;
+  --lighterColor: #dce8f4;
   --darkColor: #30338b;
 }
 
@@ -95,7 +96,7 @@
 .day {
   display: grid;
   grid-template-columns: auto auto auto;
-  border: 1px solid var(--lightColor);
+  border: 1px solid var(--lighterColor);
   background-color: #fff;
   border-radius: 10px;
 }
@@ -107,7 +108,7 @@
 }
 
 .day__temps {
-  background-color: var(--lightColor);
+  background-color: var(--lighterColor);
   border-radius: 10px;
 }
 
@@ -117,6 +118,21 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
+}
+
+.visit__header, .reviews, .reviews__header, .reviews__photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews__header, .reviews__photos {
+  justify-content: space-around;
+}
+
+.reviews__item {
+  border-radius: 5px;
+  background-color: var(--lightColor);
 }
 
 .visit__city {
@@ -171,7 +187,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: var(--lightColor);
+  background-color: var(--lighterColor);
 }
 
 .city__info {
@@ -199,7 +215,7 @@
   display: grid;
   grid-template-rows: auto auto;
   justify-content: center;
-  border: 2px dashed var(--lightColor);
+  border: 2px dashed var(--lighterColor);
 }
 
 .cities__button {

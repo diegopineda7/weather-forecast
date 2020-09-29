@@ -9,13 +9,13 @@ export default function Reviews() {
       </div>
       <div className='reviews__photos'>
         <div className='reviews__item'>
-          <img alt='Review' />
+          <img src='' alt='Review' />
         </div>
         <div className='reviews__item'>
-          <img alt='Review' />
+          <img src='' alt='Review' />
         </div>
         <div className='reviews__item'>
-          <img alt='Review' />
+          <img src='' alt='Review' />
         </div>
         <div className='reviews__item'>
           <p>9+</p>

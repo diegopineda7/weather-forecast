@@ -8,6 +8,8 @@ body {
   gap: 50px;
 }
 
+/* =============== BANNER =============== */
+
 .app__banner {
   position: absolute;
   border: 1px solid black;
@@ -16,4 +18,35 @@ body {
   left: 30px;
   right: 30px;
   height: 41%;
+}
+
+/* =============== APP SECONDARY =============== */
+
+.app__secondary {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  right: 30px;
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr auto;
+  gap: 40px;
+  height: 43%;
+}
+
+/* =============== DAYS FORECAST SECTION =============== */
+
+.days, .visit {
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.content--days {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+
+.day {
+  border: 1px solid black;
+  border-radius: 10px;
 }

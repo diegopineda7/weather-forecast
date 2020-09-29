@@ -135,10 +135,10 @@ button {
 
 .day {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 2fr 5fr 3fr;
   border: 1px solid var(--lighterColor);
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .day__icon, .day__weather, .day__temps {
@@ -147,9 +147,18 @@ button {
   justify-content: center;
 }
 
+.day__weather {
+  flex-direction: column;
+}
+
 .day__temps {
-  background-color: var(--lighterColor);
   border-radius: 10px;
+  background-color: var(--lighterColor);
+}
+
+.day__temps--next {
+  background-color: var(--mainColor);
+  color: #fff;
 }
 
 /* =============== PLACE VISIT SECTION =============== */

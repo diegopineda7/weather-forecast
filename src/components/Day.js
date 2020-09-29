@@ -3,10 +3,12 @@ import React from 'react'
 import Moment from 'react-moment'
 import { iconUrl } from '../services'
 
-export default function Day({ dayForecast }) {
+export default function Day({ dayForecast, next }) {
   const { dt } = dayForecast
   const { min, max } = dayForecast.temp
   const { icon, main } = dayForecast.weather[0]
+
+  const classWeather = next ? 'day__temps--next' : ''
 
   return (
     <div className='day shadow'>
@@ -22,8 +24,10 @@ export default function Day({ dayForecast }) {
         </p>
         <p>{main}</p>
       </div>
-      <div className='day__temps'>
-        <p>{parseInt(max)}</p><p className='degrees'>ºC</p> <p>/ {parseInt(min)}</p><p className='degrees'>ºC</p>
+      <div className={`day__temps ${classWeather}`}>
+        <p>{parseInt(max)}</p><p className='degrees'>º</p>
+        <pre> / </pre>
+        <p>{parseInt(min)}</p><p className='degrees'>º</p>
       </div>
     </div>
   )

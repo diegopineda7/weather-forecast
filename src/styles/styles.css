@@ -103,7 +103,6 @@ button {
 
 .app__banner {
   padding: 45px 85px;
-  border: 1px solid black;
   border-radius: 15px;
 }
 
@@ -217,11 +216,18 @@ button {
   font-size: 25px;
 }
 
-.visit__name {
-  position: relative;
-  padding: 25px;
-  font-size: 15px;
+.visit__location {
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  font-size: 15px;
+  position: relative;
+  background-color: rgba(0,0,0,.3);
+  border-radius: 20px;
 }
 
 /* =============== CITIES WEATHER SECTION =============== */

@@ -1,4 +1,5 @@
 import React from 'react'
+import LocationIcon from './LocationIcon'
 import Reviews from './Reviews'
 
 export default function PlaceVisit({ place1, city, place2, place3 }) {
@@ -10,17 +11,30 @@ export default function PlaceVisit({ place1, city, place2, place3 }) {
       </div>
       <div className='content--visit'>
         <div className='visit__city shadow'>
-          <p className='visit__name'>
-            <p>{place1}</p>
-            <p>{city}</p>
+          <p className='visit__location'>
+            <LocationIcon />
+            <p className='visit__name'>
+              <p>{place1}</p>
+              <p>{city}</p>
+            </p>
           </p>
         </div>
         <div className='visit__secondary'>
           <div className='visit__place visit__place--place2'>
-            <p className='visit__name'>{place2}</p>
+            <p className='visit__location'>
+              <LocationIcon />
+              <p className='visit__name'>
+                {place2}
+              </p>
+            </p>
           </div>
           <div className='visit__place visit__place--place3'>
-            <p className='visit__name'>{place3}</p>
+            <p className='visit__location'>
+              <LocationIcon />
+              <p className='visit__name'>
+                {place3}
+              </p>
+            </p>
             <button className='visit__plus'>+</button>
           </div>
         </div>

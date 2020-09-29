@@ -42,7 +42,7 @@ function App() {
                 place1='Arab Street'
                 place2='Art Science Museum'
                 place3='Fountain of Wealth'
-                city='Singapour'
+                city='Singapore'
               />
               <CitiesWeather
                 paris={parisWeather}

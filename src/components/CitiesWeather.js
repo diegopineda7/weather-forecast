@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CitiesWeather() {
+export default function CitiesWeather({ paris, city }) {
   return (
     <div className="cities">
       <div className="city shadow">Paris</div>

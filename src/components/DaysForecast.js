@@ -1,7 +1,7 @@
 import React from 'react'
 import Day from './Day'
 
-export default function DaysForecast() {
+export default function DaysForecast({ forecast }) {
   return (
     <div className='days'>
       <div className='header'>

@@ -5,7 +5,7 @@ export default function PlaceVisit({ place1, city, place2, place3 }) {
   return (
     <div className='visit'>
       <div className='visit__header'>
-        <b>Place to</b> visit
+        <p><b>Place to</b> visit</p>
         <Reviews />
       </div>
       <div className='content--visit'>

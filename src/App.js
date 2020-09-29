@@ -4,10 +4,11 @@ import CitiesWeather from './components/CitiesWeather';
 import DaysForecast from './components/DaysForecast';
 import FixedCurrent from './components/FixedCurrent';
 import PlaceVisit from './components/PlaceVisit';
-import { getCurrentWeather } from './services';
+import { getCurrentWeather, getWeatherForecast } from './services';
 import './styles/styles.css';
 
 function App() {
+  const [bogotaForecast, setBogotaForecast] = useState(undefined)
   const [bogotaWeather, setBogotaWeather] = useState(undefined)
   const [parisWeather, setParisWeather] = useState(undefined)
   const [cityWeather, setCityWeather] = useState(undefined)
@@ -17,6 +18,7 @@ function App() {
   }, [])
 
   const loadWeather = async () => {
+    getWeatherForecast('bogota', setBogotaForecast)
     getCurrentWeather('bogota', setBogotaWeather)
     getCurrentWeather('paris', setParisWeather)
     getCurrentWeather('lyon', setCityWeather)
@@ -35,7 +37,7 @@ function App() {
           <div className='app'>
             <Banner cityName={bogotaWeather.name} />
             <div className='app__secondary'>
-              <DaysForecast />
+              <DaysForecast forecast={bogotaForecast} />
               <PlaceVisit />
               <CitiesWeather
                 paris={parisWeather}

@@ -32,7 +32,7 @@
 
 .degrees {
   font-size: 11px;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 /* =============== FIXED CURRENT =============== */
@@ -60,14 +60,20 @@
 }
 
 .current__temp {
+  background-color:var(--mainColor);
+}
+
+.fixed__temp {
+  display: flex;
+  align-items: flex-start;
   flex-direction: row;
   font-size: 31px;
-  background-color:var(--mainColor);
 }
 
 /* =============== BANNER =============== */
 
 .app__banner {
+  padding: 35px 85px;
   border: 1px solid black;
   border-radius: 15px;
 }
@@ -114,25 +120,37 @@
 
 /* =============== PLACE VISIT SECTION =============== */
 
-.content--visit {
+.content--visit, .visit__header {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 20px;
+  grid-template-columns: 47.5% 47.5%;
+  gap: 5%;
 }
 
-.visit__header, .reviews, .reviews__header, .reviews__photos {
+
+.reviews, .reviews__header, .reviews__photos {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
-.reviews__header, .reviews__photos {
-  justify-content: space-around;
+.reviews__photos {
+  gap: 3px
 }
 
 .reviews__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
   background-color: var(--lightColor);
+  color: #fff;
+}
+
+.review__photo {
+  width: 25px;
+  height: 25px;
 }
 
 .visit__city {
@@ -148,13 +166,20 @@
 
 .visit__place {
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .visit__plus {
+  height: 100%;
+  padding: 22px;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: var(--mainColor);
+  color: #fff;
+  font-size: 25px;
 }
 
 /* =============== CITIES WEATHER SECTION =============== */
@@ -169,16 +194,15 @@
 }
 
 .city {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 70% 30%;
   border-radius: 10px;
   background-color: #fff;
 }
 
 .city__top {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   gap: 15px;
 }
 
@@ -186,29 +210,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
   background-color: var(--lighterColor);
+  border-radius: 10px;
 }
 
 .city__info {
   display: flex;
   align-items: center;
+  margin: auto 0;
+  height: fit-content;
 }
 
 .city__temp {
   display: flex;
-  border-right: 1px solid black;
-  font-size: 25px;
+  border-right: 1px solid var(--lighterColor);
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .city__temp, .city__name {
-  padding: 0 15px;
+  padding: 0px 15px;
+}
+
+.city__city {
+  font-weight: bold;
+}
+
+.city__country {
+  font-size: 13px;
 }
 
 .city__weather {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  opacity: .5;
+  font-size: 14px;
 }
 
 .cities--location {
@@ -225,9 +262,11 @@
 }
 
 .add-location {
-  padding: 5px 35px;
+  padding: 10px 35px;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
+  color: var(--mainColor);
+  font-weight: bold;
 }
 
 .location__img {

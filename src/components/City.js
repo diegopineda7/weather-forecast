@@ -14,11 +14,11 @@ export default function City({ weather, country }) {
         </div>
         <div className='city__info'>
           <div className='city__temp'>
-            <p>{temp}</p><p className='degrees'>ºC</p>
+            <p>{parseInt(temp)}</p><p className='degrees'>ºC</p>
           </div>
           <div className='city__name'>
-            <p>{name}</p>
-            <p>{country}</p>
+            <p className='city__city'>{name.split(' ').pop()}</p>
+            <p className='city__country'>{country}</p>
           </div>
         </div>
       </div>

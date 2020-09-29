@@ -1,4 +1,5 @@
 import React from 'react'
+import person from '../person.png'
 
 export default function Reviews() {
   return (
@@ -9,13 +10,13 @@ export default function Reviews() {
       </div>
       <div className='reviews__photos'>
         <div className='reviews__item'>
-          <img src='' alt='Review' />
+          <img src={person} alt='Review' className='review__photo' />
         </div>
         <div className='reviews__item'>
-          <img src='' alt='Review' />
+          <img src={person} alt='Review' className='review__photo' />
         </div>
         <div className='reviews__item'>
-          <img src='' alt='Review' />
+          <img src={person} alt='Review' className='review__photo' />
         </div>
         <div className='reviews__item'>
           <p>9+</p>

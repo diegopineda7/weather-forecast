@@ -25,8 +25,8 @@
 
 .shadow {
   -webkit-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
--moz-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
+  box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
 }
 
 .degrees {
@@ -133,6 +133,12 @@ box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
 .visit__place {
   border: 1px solid black;
   border-radius: 10px;
+}
+
+.visit__plus {
+  border: none;
+  border-radius: 15px;
+  background-color: var(--mainColor);
 }
 
 /* =============== CITIES WEATHER SECTION =============== */

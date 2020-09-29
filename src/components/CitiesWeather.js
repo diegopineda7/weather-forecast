@@ -12,7 +12,7 @@ export default function CitiesWeather({ paris, city }) {
         weather={paris}
         country='France'
       />
-      <div className='city cities--location shadow'>
+      <div className='city cities--location'>
         <div className='cities__button'>
           <button className='add-location'>Add Locations</button>
         </div>

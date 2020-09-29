@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+  --mainColor: #86418f;
+  --lightColor: #dce8f4;
+  --darkColor: #30338b;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 .app {
   position: absolute;
   top: 30px;
@@ -12,18 +24,14 @@
 }
 
 .shadow {
-  box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, .7);
+  -webkit-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
+-moz-box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
+box-shadow: 0px 35px 40px 9px rgba(0,0,0,0.23);
 }
 
 .degrees {
   font-size: 11px;
   line-height: 35px;
-}
-
-* {
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-  margin: 0;
 }
 
 /* =============== FIXED CURRENT =============== */
@@ -33,6 +41,8 @@
   left: 0;
   top: 10%;
   z-index: 1;
+  background-color: var(--mainColor);
+  border-radius: 15px;
 }
 
 .current__icon, .current__temp {
@@ -42,15 +52,16 @@
   justify-content: center;
   width: 75px;
   height: 75px;
-  border: 1px solid black;
   font-size: 13px;
-  background-color: #fff;
-
+  background-color:var(--darkColor);
+  border-radius: 15px;
+  color: #fff;
 }
 
 .current__temp {
   flex-direction: row;
-  font-size: 25px;
+  font-size: 31px;
+  background-color:var(--mainColor);
 }
 
 /* =============== BANNER =============== */
@@ -84,7 +95,8 @@
 .day {
   display: grid;
   grid-template-columns: auto auto auto;
-  border: 1px solid black;
+  border: 1px solid var(--lightColor);
+  background-color: #fff;
   border-radius: 10px;
 }
 
@@ -95,7 +107,7 @@
 }
 
 .day__temps {
-  border: 1px solid black;
+  background-color: var(--lightColor);
   border-radius: 10px;
 }
 
@@ -138,7 +150,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid black;
   border-radius: 10px;
   background-color: #fff;
 }
@@ -153,8 +164,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   border-radius: 10px;
+  background-color: var(--lightColor);
 }
 
 .city__info {
@@ -182,7 +193,7 @@
   display: grid;
   grid-template-rows: auto auto;
   justify-content: center;
-  border-style: dashed;
+  border: 2px dashed var(--lightColor);
 }
 
 .cities__button {

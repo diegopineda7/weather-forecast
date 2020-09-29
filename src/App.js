@@ -4,7 +4,7 @@ import CitiesWeather from './components/CitiesWeather';
 import DaysForecast from './components/DaysForecast';
 import FixedCurrent from './components/FixedCurrent';
 import PlaceVisit from './components/PlaceVisit';
-import { loadWeather } from './services';
+import { getCurrentWeather, getWeatherForecast } from './services';
 import './styles/styles.css';
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
   }, [])
 
   const _loadWeather = () => {
-    const mainResult = loadWeather('bogota')
-    const parisResult = loadWeather('paris')
-    const cityResult = loadWeather('madrid')
+    const mainResult = getWeatherForecast('bogota')
+    const parisResult = getCurrentWeather('paris')
+    const cityResult = getCurrentWeather('madrid')
     setMainCity(mainResult.city.name)
     setMainCityWeather(mainResult)
     setParisWeather(parisResult)

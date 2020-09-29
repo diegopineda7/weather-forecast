@@ -5,7 +5,9 @@ export default function CitiesWeather({ paris, city }) {
     <div className="cities">
       <div className="city shadow">Paris</div>
       <div className="city shadow">Madrid</div>
-      <div className="city city--location shadow">Add location</div>
+      <div className="city city--location shadow">
+        Add location
+      </div>
     </div>
   )
 }

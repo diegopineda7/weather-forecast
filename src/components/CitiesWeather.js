@@ -3,11 +3,18 @@ import City from './City'
 
 export default function CitiesWeather({ paris, city }) {
   return (
-    <div className="cities">
+    <div className='cities'>
       <City />
       <City />
-      <div className="city city--location shadow">
-        Add location
+      <div className='city cities--location shadow'>
+        <div className='cities__button'>
+          <button className='add-location'>Add Locations</button>
+        </div>
+        <img
+          src={'s'}
+          alt={'weather'}
+          className='location__img'
+        />
       </div>
     </div>
   )

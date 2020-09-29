@@ -74,3 +74,23 @@ body {
   border: 1px solid black;
   border-radius: 10px;
 }
+
+/* =============== CITIES WEATHER SECTION =============== */
+
+.cities {
+  display: grid;
+  grid-template-rows: 27% 27% auto;
+  gap: 15px;
+  align-self: flex-end;
+  height: 140%;
+  width: 100%;
+}
+
+.city {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.city--location {
+  border-style: dashed;
+}

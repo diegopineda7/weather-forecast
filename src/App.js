@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Banner from './components/Banner';
 import CitiesWeather from './components/CitiesWeather';
 import DaysForecast from './components/DaysForecast';
@@ -13,11 +13,11 @@ function App() {
   const [parisWeather, setParisWeather] = useState({})
   const [cityWeather, setCityWeather] = useState({})
 
-  useEffect(() => {
-    _loadWeather()
-  }, [])
+  // useEffect(() => {
+  //   loadWeather()
+  // }, [])
 
-  const _loadWeather = () => {
+  const loadWeather = () => {
     const mainResult = getWeatherForecast('bogota')
     const parisResult = getCurrentWeather('paris')
     const cityResult = getCurrentWeather('madrid')

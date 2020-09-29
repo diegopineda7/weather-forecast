@@ -13,6 +13,10 @@
   box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, .7);
 }
 
+.degrees {
+  font-size: 11px;
+}
+
 /* =============== FIXED CURRENT =============== */
 
 .current {
@@ -23,8 +27,14 @@
 }
 
 .current__icon, .current__temp {
+  display: flex;
+  flex-direction: column;
   padding: 22px;
   border: 1px solid black;
+}
+
+.current__temp {
+  flex-direction: row;
 }
 
 /* =============== BANNER =============== */
@@ -56,8 +66,14 @@
 }
 
 .day {
+  display: grid;
+  grid-template-columns: auto auto auto;
   border: 1px solid black;
   border-radius: 10px;
+}
+
+.day__temps {
+  display: flex;
 }
 
 /* =============== PLACE VISIT SECTION =============== */
@@ -96,8 +112,26 @@
 }
 
 .city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid black;
   border-radius: 15px;
+}
+
+.city__top, .city__info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.city__temp {
+  display: flex;
+}
+
+.city__weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .city--location {

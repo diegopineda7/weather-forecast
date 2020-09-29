@@ -5,7 +5,7 @@
   left: 30px;
   right: 30px;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 45%;
   gap: 40px;
 }
 
@@ -29,6 +29,8 @@
 .current__icon, .current__temp {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 22px;
   border: 1px solid black;
 }
@@ -72,8 +74,15 @@
   border-radius: 10px;
 }
 
-.day__temps {
+.day__icon, .day__weather, .day__temps {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day__temps {
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 /* =============== PLACE VISIT SECTION =============== */
@@ -116,12 +125,21 @@
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid black;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
-.city__top, .city__info {
+.city__top {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 15px;
+}
+
+.city__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .city__temp {

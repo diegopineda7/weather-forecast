@@ -1,3 +1,7 @@
+## Framewokrs
+
+App developed with React JS and SASS styles. 
+
 ## Running the app
 
 ### Clone repository

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Reviews() {
-  const defaultImg = 'personUrl'
+  const defaultImg = 'https://cdn.onlinewebfonts.com/svg/img_56724.png'
 
   return (
     <div className='reviews'>

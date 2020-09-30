@@ -1,0 +1,51 @@
+@import './misc';
+
+.days, .visit {
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.content--days {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+
+.day {
+  display: grid;
+  grid-template-columns: 3fr 4.5fr 3fr;
+  border: 1px solid $lighterColor;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.day__icon, .day__weather, .day__temps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day__weather {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.day__week-day {
+  font-weight: bold;
+}
+
+.day__weather-day {
+  font-size: 15px;
+  opacity: .5;
+}
+
+.day__temps {
+  border-radius: 10px;
+  background-color: $lighterColor;
+  font-weight: bold;
+}
+
+.day__temps--next {
+  background-color: $mainColor;
+  color: #fff;
+}

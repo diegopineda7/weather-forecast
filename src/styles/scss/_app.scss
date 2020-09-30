@@ -1,0 +1,60 @@
+@import './misc';
+
+.app {
+  position: absolute;
+  top: 30px;
+  bottom: 40px;
+  left: 30px;
+  right: 30px;
+  display: grid;
+  grid-template-rows: 45%;
+  gap: 40px;
+
+  @media screen and (max-width: $breakPoint) {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+  }
+}
+
+.app__secondary {
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr auto;
+  gap: 40px;
+
+  @media screen and (max-width: $breakPoint) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 50px;
+  }
+}
+
+/* =============== BACKGROUND IMAGES =============== */
+
+.app__banner, .visit__city, .visit__place, .location__img {
+  background-position: center;
+  background-size: cover;
+}
+
+.app__banner {
+  background-image: url('https://www.webinars4you.com/wp-content/uploads/2019/11/Singapore-Skyline-Banner-e1441102099802.jpg');
+}
+
+.visit__city {
+  background-image: url('https://spendlifetraveling.b-cdn.net/wp-content/uploads/2017/10/singapore_arab_street.jpg');
+}
+
+.visit__place--place2 {
+  background-image: url('https://worldtoptop.com/wp-content/uploads/2011/05/artscience_museum_2.jpg');
+}
+
+.visit__place--place3 {
+  background-image: url('https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Cover-for-Places-to-visit-near-Fountain-Of-Wealth.jpg');
+}
+
+.location__img {
+  background-image: url('https://www.blueiot.com.au/wp-content/uploads/2019/05/undraw_best_place_r685-1024x504.png');
+}

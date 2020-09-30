@@ -1,0 +1,12 @@
+@import './misc';
+
+.app__banner {
+  padding: 45px 85px;
+  border-radius: 15px;
+}
+
+.city-name {
+  color: $mainColor;
+  font-weight: bold;
+  font-size: 18px;
+}

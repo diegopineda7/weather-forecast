@@ -5,7 +5,7 @@ import DaysForecast from './components/DaysForecast';
 import FixedCurrent from './components/FixedCurrent';
 import PlaceVisit from './components/PlaceVisit';
 import { getCurrentWeather, getWeatherForecast } from './services';
-import './styles/styles.css';
+import './styles/css/styles.css';
 
 function App() {
   const [bogotaForecast, setBogotaForecast] = useState(undefined)

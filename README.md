@@ -1,4 +1,4 @@
-## Framewokrs
+## Framework and styles
 
 App developed with React JS and SASS styles. 
 

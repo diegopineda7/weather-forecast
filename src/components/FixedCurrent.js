@@ -14,7 +14,7 @@ export default function FixedCurrent({ icon, weather, temp }) {
       </div>
       <div className='current__temp'>
         <article className='fixed__temp'>
-          <p><b>{temp}</b></p>
+          <p>{parseInt(temp)}</p>
           <p className='degrees'>ºC</p>
         </article>
       </div>

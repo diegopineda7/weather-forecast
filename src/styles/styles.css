@@ -373,11 +373,17 @@ button {
     gap: 50px;
   }
 
-  .visit__header {
-    display: grid;
-    grid-template-columns: auto 55%;
+  .visit {
+    gap: 5px
   }
 
+  .reviews {
+    flex-direction: column;
+  }
+
+  .reviews__header {
+    font-size: 13px;
+  }
 
   .cities {
     height: 100%;
@@ -391,7 +397,11 @@ button {
     background-color: #fff;
     height: fit-content;
     padding-right: 25px;
-}
+  }
+
+  .city__icon {
+    padding: 10px;
+  }
 
   .city__weather {
     flex-direction: column;
@@ -404,5 +414,9 @@ button {
     height: auto;
     grid-template-rows: auto;
     grid-template-columns: 50% 50%;
+  }
+  
+  .add-location {
+    padding: 10px 20px;
   }
 }

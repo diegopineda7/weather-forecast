@@ -102,7 +102,7 @@ button {
   border-radius: 15px; }
 
 .city-name {
-  color: #86418f;
+  color: #7c29ac;
   font-weight: bold;
   font-size: 18px; }
 
@@ -223,7 +223,7 @@ button {
   padding: 10px 35px;
   border: none;
   border-radius: 20px;
-  color: #86418f;
+  color: #7c29ac;
   font-weight: bold; }
   @media screen and (max-width: 800px) {
     .add-location {
@@ -293,7 +293,7 @@ button {
   font-weight: bold; }
 
 .day__temps--next {
-  background-color: #86418f;
+  background-color: #7c29ac;
   color: #fff; }
 
 * {
@@ -323,7 +323,7 @@ button {
   left: 0;
   top: 10%;
   z-index: 1;
-  background-color: #86418f;
+  background-color: #7c29ac;
   border-radius: 0 30px 30px 0; }
 
 .current::before {
@@ -334,7 +334,8 @@ button {
   height: 50px;
   width: 35px;
   border-top-left-radius: 10px;
-  box-shadow: 0 -25px 0 0 #86418f; }
+  box-shadow: 0 -25px 0 0 #7c29ac;
+  z-index: -1; }
 
 .current::after {
   content: "";
@@ -344,7 +345,7 @@ button {
   height: 50px;
   width: 35px;
   border-bottom-left-radius: 10px;
-  box-shadow: 0 25px 0 0 #30338b;
+  box-shadow: 0 25px 0 0 #2f055f;
   z-index: -1; }
 
 .current__icon, .current__temp {
@@ -355,7 +356,7 @@ button {
   width: 75px;
   height: 75px;
   font-size: 13px;
-  background-color: #30338b;
+  background-color: #2f055f;
   border-radius: 30px;
   color: #fff; }
 
@@ -364,7 +365,8 @@ button {
   border-bottom-left-radius: 11px; }
 
 .current__temp {
-  background-color: #86418f; }
+  height: 60px;
+  background-color: #7c29ac; }
 
 .fixed__temp {
   display: flex;
@@ -449,7 +451,7 @@ button {
   color: #fff; }
 
 .reviews__item--count {
-  background-color: #9a60ac; }
+  background-color: #a972b9; }
 
 .review__photo {
   width: 25px;
@@ -477,7 +479,7 @@ button {
   padding: 18px;
   border: none;
   border-radius: 30px;
-  background-color: #86418f;
+  background-color: #7c29ac;
   color: #fff;
   font-size: 25px; }
 

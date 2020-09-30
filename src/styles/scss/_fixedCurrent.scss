@@ -18,6 +18,7 @@
   width: 35px;
   border-top-left-radius: 10px;
   box-shadow: 0 -25px 0 0 $mainColor;
+  z-index: -1;
 }
 
 .current::after {
@@ -51,6 +52,7 @@
 }
 
 .current__temp {
+  height: 60px;
   background-color: $mainColor;
 }
 
